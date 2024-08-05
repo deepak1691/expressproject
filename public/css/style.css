@@ -1,0 +1,74 @@
+.blue_main{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid white;
+    
+}
+
+.blue{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid blue;
+    overflow: hidden;
+   
+}
+
+.blue img{
+   height: 100px;
+   width: 100px;
+  
+    
+}
+
+.upperdiv{
+    padding-top: 66px;
+}
+.btnn{
+    background-color: #24a0ed;
+    color: white;
+    border: none;
+    padding: 0 19px;
+    margin-left: 50px;
+}
+
+.flexbtn{
+    display: flex;
+}
+.cards-info{
+    padding-top: 115px;
+    
+}
+.pimg{
+    width: 286px;
+    height: 266px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.rt{
+    overflow: hidden;
+}
+.icon ul{
+    list-style: none;
+    text-align: start;
+    margin: 0;
+    padding-left: 0;
+}
+
+.icon ul li{
+    display: inline-block;
+    margin-left: 9px;
+
+}
+.icon i{
+     background-color: none;
+}
+.icon{
+    display: flex;
+    justify-content: space-between;
+}

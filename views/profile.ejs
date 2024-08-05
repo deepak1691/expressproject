@@ -1,0 +1,64 @@
+<%- include("includes/navbar.ejs") %>
+<%- include("includes/head.ejs") %>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="upperdiv">
+            <div class="row">
+                <div class="col-md-2 col-4">
+                    <div class="blue_main">
+                        <div class="blue">
+                            <img src="<%=data.imge %>" alt="tnj">
+                        </div>
+                   </div>
+                </div>
+                <div class="col-md-10 col-8">
+                    <div class="flexbtn">
+                    <h3><%=data.name%></h3> 
+                    <button class="btnn">Follow</button>
+                    </div>
+                   
+                    </div>
+                    
+                </div>
+            </div>
+
+          
+
+                <div class="cards-info">
+                    <div class="row ">
+                        <% for(let post of data.posts){ %>
+                        <div class="col-lg-4 col-sm-6 col-md-6  cards">
+                            <div class="card rt mt-4" style="width: 18rem;">
+                                <img class="pimg p-4 pb-0" src="<%=post.image%>" class="card-img-top" alt="...">
+                                <div class="card-body ">
+                                  <div class="icon">
+                                    <ul>
+                                        <li id="li1" type="button"><i type="button" id="like" class="fa-regular fa-heart fa-xl" ></i></li>
+                                        <li><i class="fa-regular fa-comment fa-xl"></i></li>
+                                        <li><i class="fa-solid fa-share fa-xl"></i></li>
+                                    </ul>
+
+                                    <div class="book">
+                                        <i class="fa-regular fa-bookmark fa-xl"></i>
+                                    </div>
+                                  </div>
+                                 
+                                </div>
+                              </div>
+                        </div>
+                        <% } %>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+  
+        <script src="/app.js"></script>
+</body>
+
+
+
+
